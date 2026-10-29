@@ -3,3 +3,16 @@
 Thumbs.db
 .vscode/
 .idea/
+*.log
+
+# Backend (Django)
+backend/.venv/
+__pycache__/
+*.py[cod]
+*.sqlite3
+backend/.env
+backend/media/
+backend/staticfiles/
+backend/.cache/
+*.egg-info/
+coverage/

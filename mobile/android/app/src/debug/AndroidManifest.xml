@@ -1,0 +1,5 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Debug builds only: the dev server runs over plain HTTP. Release builds
+         get Android's default (HTTPS only). -->
+    <application android:usesCleartextTraffic="true" />
+</manifest>

@@ -1,0 +1,14 @@
+[Unit]
+Description=Fillo Gunicorn
+After=network.target
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/fillo/server
+EnvironmentFile=/var/www/fillo/server/.env
+ExecStart=/var/www/fillo/server/.venv/bin/gunicorn config.wsgi:application --bind 127.0.0.1:8001 --workers 3
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
